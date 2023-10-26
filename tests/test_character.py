@@ -37,4 +37,5 @@ class TestCharacterInitWithName(TestCase):
         ARBITRARY_NAME = "MyName"
         testobj = Character(ARBITRARY_NAME)
         self.assertEqual(testobj.get_Position(), 100)
+    
 
