@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation     I want to move my character. If they attempt to move past a boundary, the move results in no change in position. Domain Model \n\n https://raw.githubusercontent.com/level-up-program/python-robot-reference/main/tests/robot/images/Dominators_DM.jpeg
+Documentation     I want to move my character. If they attempt to move past a boundary, the move results in no change in position. Domain Model \n\n https://github.com/level-up-program/team-11-dominators-73ebb1b4/blob/20d672e60910aa71bd39b729a7a94686c6b1927e/tests/robot/images/Dominators_DM.jpeg
 Test Template     Move character
 Library           MoveLibrary.py
 
