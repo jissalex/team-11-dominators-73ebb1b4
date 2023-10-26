@@ -4,6 +4,7 @@ from enum import Enum
 
 
 DEFAULT_CHARACTER_NAME = "Character"
+DEFAULT_CURRENT_POSITION = (0,0)
 
 #TODO: ADD THINGS YOU NEED FOR STATUS
 @dataclass
@@ -52,7 +53,10 @@ class GameController:
 
     def set_character_position(self, xycoordinates: tuple) -> None:
         # TODO: IMPLEMENT THIS TO SET CHARACTERS CURRENT POSITION -- exists to be testable
-        pass
+        if xycoordinates is not None:
+            self.status.current_position = xycoordinates
+        else:
+            self.status.current_position = DEFAULT_CURRENT_POSITION
 
     def set_current_move_count(self, move_count: int) -> None:
         # TODO: IMPLEMENT THIS TO SET CURRENT MOVE COUNT -- exists to be testable
