@@ -4,7 +4,7 @@ from levelup.character import Character
 class Fakemap:
     pass
 
-class FakePops:
+class FakePos:
     pass
 
 class TestCharacterInitWithName(TestCase):
@@ -25,5 +25,5 @@ class TestCharacterInitWithName(TestCase):
         testobj = Character(ARBITRARY_NAME)
         fakemap = Fakemap()
         testobj.enter_map(fakemap)
-        expected_position = FakePops()
+        expected_position = FakePos()
         self.assertEqual(testobj.current_position, expected_position)
