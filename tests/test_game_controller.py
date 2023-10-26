@@ -18,3 +18,7 @@ class TestGameController(TestCase):
         testObj = GameController()
         testObj.create_character('Fire')
         assert testObj.status.character_name == 'Fire'
+
+    def test_def_pos(self):
+        testObj = GameController()
+        assert testObj.status.current_position == (-100,-100)
