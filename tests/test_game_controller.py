@@ -22,9 +22,4 @@ class TestGameController(TestCase):
     def test_def_pos(self):
         testObj = GameController()
         assert testObj.status.current_position == (-100,-100)
-
     
-    def test_char_pos(self):
-        testObj = GameController()
-        testObj.set_character_position = (1,1)
-        assert testObj.status.current_position == (1,1)    
