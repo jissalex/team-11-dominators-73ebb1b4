@@ -6,3 +6,7 @@ class Character:
 
     def enter_map(self, map):
         pass
+    
+    def get_Name(self):
+        self.name ='Test'
+        return self.name

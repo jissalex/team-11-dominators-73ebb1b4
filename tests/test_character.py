@@ -27,3 +27,9 @@ class TestCharacterInitWithName(TestCase):
         testobj.enter_map(fakemap)
         expected_position = FakePos()
         self.assertEqual(testobj.current_position, expected_position)
+    
+    def test_get_name(self):
+        ARBITRARY_NAME = "MyName"
+        testobj = Character(ARBITRARY_NAME)
+        self.assertEqual(testobj.get_Name(), 'Test')
+
