@@ -11,6 +11,6 @@ class TestCharacterLessThanTwoLetters(TestCase):
     def test_init(self):
         ARBITARY_LENGTH = "4"
         testobj = Character(ARBITARY_LENGTH)
-        self.assertEqual(ARBITARYY_LENGTH, testobj.length)
+        self.assertEqual(ARBITARY_LENGTH, testobj.length)
 
 #create fake map underneath this
