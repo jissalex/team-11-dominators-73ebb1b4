@@ -9,7 +9,7 @@ class TestCharacterInitWithName(TestCase):
 
 class TestCharacterLessThanTwoLetters(TestCase):
     def test_init(self):
-        ARBITARYY_LENGTH = "4"
+        ARBITARY_LENGTH = "4"
         testobj = Character(ARBITARY_LENGTH)
         self.assertEqual(ARBITARYY_LENGTH, testobj.length)
 
