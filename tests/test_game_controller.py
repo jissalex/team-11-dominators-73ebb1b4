@@ -8,4 +8,7 @@ class TestGameController(TestCase):
     def test_init(self):
         testObj = GameController()
         assert testObj.status != None
-        
+    
+    def test_character(self):
+        testObj = GameController()
+        assert testObj.status.character_name == 'Character'
