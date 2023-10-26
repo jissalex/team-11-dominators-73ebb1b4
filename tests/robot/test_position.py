@@ -2,8 +2,13 @@ import unittest
 from levelup.position import Position
 
 class TestPosition(unittest.TestCase):
+    def test_validate_alternate_construtor (self):
+        testobj = Position (8,9)
+
+
+
     def test_initialization(self):
-        testobj = Position()
+        testobj = Position(9,8)
         expected_minimumXValue = (0)
         expected_maximumXValue = (9)
         expected_minimumYValue = (0)
@@ -26,7 +31,7 @@ class TestPosition(unittest.TestCase):
         )
 
     def test_validate_Values_Within_Limits (self):
-        testobj = Position()
+        testobj = Position(9,9)
         expected_minimumXValue = (0)
         expected_maximumXValue = (9)
         expected_minimumYValue = (0)
@@ -48,7 +53,7 @@ class TestPosition(unittest.TestCase):
             expected_maximumYValue
         )        
     def test_validate_Coordinates_in_Range (self):
-        testobj = Position()
+        testobj = Position(8,9)
         expected_minimumXValue = (0)
         expected_maximumXValue = (9)
         expected_minimumYValue = (0)
