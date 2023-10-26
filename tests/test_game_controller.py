@@ -9,6 +9,12 @@ class TestGameController(TestCase):
         testObj = GameController()
         assert testObj.status != None
     
-    def test_character(self):
+    def test_def_character(self):
         testObj = GameController()
         assert testObj.status.character_name == 'Character'
+
+            
+    def test_character(self):
+        testObj = GameController()
+        testObj.create_character('Fire')
+        assert testObj.status.character_name == 'Fire'
