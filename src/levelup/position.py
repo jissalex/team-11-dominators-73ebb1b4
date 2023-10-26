@@ -1,19 +1,14 @@
-from typing import List
+class Position ():
 
-class Position:
-    XValue:int
-    YValue:int
-    def __init__(self, XValue:int, YValue:int):
-        self.XValue =  XValue
-        self.YValue = YValue
+    x = -100
+    y = -100
 
-    minimumXValue: int = 0
-    maximumXValue: int = 9
-    minimumYValue: int = 0
-    maximumYValue: int = 9
-    Xcoordinates:List[int] = range(minimumXValue,maximumXValue+1)
-    Ycoordinates:List[int] = range(minimumYValue,maximumYValue+1)
-    
- 
-    
-    pass  
+    def __init__(self, x: int, y: int):
+        self.x = x
+        self.y = y
+
+    def __eq__(self, obj):
+        if self.x == obj.x and self.y == obj.y:
+            return True
+        else:
+            return False

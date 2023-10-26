@@ -28,6 +28,7 @@ class Map ():
             return False
 
     def calculate_new_position(self, current_position: Position, direction: Direction) -> Position:
+        new_position = current_position
         if direction == Direction.NORTH:
             new_position = Position(current_position.x, current_position.y + 1)
         elif direction == Direction.SOUTH:
