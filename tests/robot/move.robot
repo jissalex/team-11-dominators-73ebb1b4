@@ -6,6 +6,14 @@ Library           MoveLibrary.py
 *** Test Cases ***                  StartingX     StartingY     StartingMoveCount     Direction     EndingX     EndingY     EndingMoveCount
 Move in the middle of the board     0             0             1                     NORTH         0           1           2
 Move on the edge of the board       0             0             5                     SOUTH         0           0           6
+Move to the right one step.         5             5             1                     WEST          4           5           2
+Spider-main                         4             5             1                     NORTH         4           6           2      
+Fire                                5             5             104                   SOUTH         5           4           105
+W                                   0             0             105                   EAST          1           0           106
+A                                   0             0             121                   WEST          0           0           120
+F                                   0             0             98                    NORTH         0           0           122
+W1                                  0             0             100                   SOUTH         0           0           101      
+F1                                  9             9             108                   EAST          9           9           109
 
 
 *** Keywords ***
