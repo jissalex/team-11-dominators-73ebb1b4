@@ -1,5 +1,5 @@
 class Character:
-    name = ""
+    name = "Fire"
     current_position = 100 
 
     def __init__(self, character_name):
@@ -9,7 +9,6 @@ class Character:
         pass
     
     def get_Name(self):
-        self.name ='Test'
         return self.name
     
     def get_Position(self):

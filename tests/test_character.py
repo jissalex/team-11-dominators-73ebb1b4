@@ -31,7 +31,7 @@ class TestCharacterInitWithName(TestCase):
     def test_get_name(self):
         ARBITRARY_NAME = "MyName"
         testobj = Character(ARBITRARY_NAME)
-        self.assertEqual(testobj.get_Name(), 'Test')
+        self.assertEqual(testobj.get_Name(), 'MyName')
 
     def test_get_position(self):
         ARBITRARY_NAME = "MyName"
