@@ -25,4 +25,39 @@ class TestPosition(unittest.TestCase):
             testobj.maximumYValue
         )
 
-
+    def test_validate_Values_Within_Limits (self):
+        testobj = Position()
+        expected_minimumXValue = (0)
+        expected_maximumXValue = (9)
+        expected_minimumYValue = (0)
+        expected_maximumYValue = (9)       
+        self.assertGreaterEqual(
+            testobj.XValue,
+            expected_minimumXValue
+        )
+        self.assertLessEqual(
+            testobj.XValue,
+            expected_maximumXValue
+        )
+        self.assertGreaterEqual(
+            testobj.YValue,
+            expected_minimumYValue
+        )
+        self.assertLessEqual(
+            testobj.YValue,
+            expected_maximumYValue
+        )        
+    def test_validate_Coordinates_in_Range (self):
+        testobj = Position()
+        expected_minimumXValue = (0)
+        expected_maximumXValue = (9)
+        expected_minimumYValue = (0)
+        expected_maximumYValue = (9)       
+        self.assertIn(
+            testobj.XValue,
+            testobj.Xcoordinates
+        )
+        self.assertIn(
+            testobj.YValue,
+            testobj.Ycoordinates
+        )
