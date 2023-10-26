@@ -4,6 +4,9 @@ from levelup.character import Character
 class Fakemap:
     pass
 
+class FakePops:
+    pass
+
 class TestCharacterInitWithName(TestCase):
     def test_init(self):
         ARBITRARY_NAME = "MyName"
@@ -22,5 +25,5 @@ class TestCharacterInitWithName(TestCase):
         testobj = Character(ARBITRARY_NAME)
         fakemap = Fakemap()
         testobj.enter_map(fakemap)
-
-        
+        expected_position = FakePops()
+        self.assertEqual(testobj.current_position, expected_position)
