@@ -19,8 +19,10 @@ class GameApp:
         return response
 
     def create_character(self):
-        character = self.prompt("Enter character name", lambda x: len(x) > 0)
+        print("WELCOME DOMINATORS PREPARE FOR THE AMAZING ADVENTURE")
+        character = self.prompt("NAME YOUR CHARACTER", lambda x: len(x) > 0)
         self.controller.create_character(character)
+        print("TO WIN THE GAME GET 10000 YOU HAVE 30 SECONDS")
 
     def move_loop(self):
         while True:
