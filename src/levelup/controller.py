@@ -13,7 +13,7 @@ class GameStatus:
     move_count: int = 0
 
     def __str__(self) -> str:
-        return f"{self.character_name} is currently on {self.current_position} and moved {self.move_count} times."
+        return f"{self.character_name} is currently on {self.current_position} and moved {self.move_count} times with {self.move_count*1000} points."
 
 class CharacterNotFoundException(Exception):
     pass
